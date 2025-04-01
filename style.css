@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Amoria";
+    src: url(AMORIA.otf);
+}
+
+@font-face {
+    font-family: "Calli font";
+    src: url(Callifornia\ Signature.ttf);
+}
 :root {
     --clr-dark: #020617;
     --clr-light:#f1f5f9;
@@ -6,6 +15,7 @@
     --clr-website_palette1: #d68a06;
     --clr-website_palette2: #3f0c00;
     --clr-hover_text: #170f01;
+    font-family: Arial, Helvetica, sans-serif;
 }
   
 *,
@@ -26,14 +36,48 @@ body {
 /* ---------------------------------------------------------- */
 
 .title {
-    font-family:'Courier New', Courier, monospace;
+    font-family:"Amoria";
     font-weight: 100;
     font-size: 6lvh;
     text-align: center;
 }
 
+.title-2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
 header{
     text-align: center;
+}
+
+/* --------- MAIN TITLE ------------------ */
+
+.main-title {
+    margin: 15px;
+}
+
+/* -------- MAIN NAV BAR STYLES --------- */
+
+.main-nav {
+    color: white;
+    border-top:  solid #1f5673 2px;
+    border-bottom:  solid #1f5673 2px;
+    padding: 20px;
+    margin: 30px;
+}
+
+nav ul li a{
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: larger;
+    color: gray;
+    text-decoration: overline;
 }
 
 nav ul{
@@ -46,14 +90,79 @@ nav ul li{
     margin-right: 25px;
 }
 
-nav ul li a{
-    font-size: large;
-    color: black;
-    text-decoration: none;
+/* ------- MAIN BODY -------- */
+
+.verseoftheday-div {
+    margin-left: 30px;
+}
+
+.verseoftheday {
+    font-style: italic;
+}
+
+.main-body-div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-welcome {
+    font-size: 18lvh;
+    font-family: "calli font";
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+.location-group {
+
+}
+
+h2{
+    font-family: "calli font";
+    font-size: 60px;
+    margin-left: 25px;
+}
+
+/* ------- FOOTER ----------- */
+
+footer {
+    background-image: radial-gradient( #6ea4bf, #cbeef3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: inline;
+    justify-content: center;
+    margin: 5px;
     padding: 5px;
 }
 
-nav ul li a:hover {
+.footer-ul, .li-2{
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.li-2 {
+    cursor: pointer;
+}
+
+.li-2:hover {
     color: gray;
-    text-decoration: overline;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: gray;
 }
