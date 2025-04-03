@@ -8,51 +8,71 @@
     <title>Home</title>
 </head>
 <body>
-    <div class="main-title">
-        <h1 class = "title">God's House</h1>
+<div class="main-title">
+    <h1 class="title">God's House</h1>
+</div>
+
+<header>
+    <div class="main-nav">
+        <nav>
+            <ul>
+                <li class="homepage-nav"><a href="index.html">Home Page</a></li>
+                <li class="about-nav"><a href="about-us.html">About Us</a></li>
+                <li class="donations-nav"><a href="donations.html">Donations</a></li>
+                <li class="findus-nav"><a href="find-us.html">Find Us</a></li>
+                <li class="quotes-nav"><a href="quotes.html">Quotes</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
 
-    <header>
-        <div class="main-nav">
-            <nav>
-                <ul>
-                    <li class="homepage-nav"><a href="index.html">Home Page</a></li>
-                    <li class="about-nav"><a href="about-us.html">About Us</a></li>
-                    <li class="donations-nav"><a href="donations.html">Donations</a></li>
-                    <li class="findus-nav"><a href="find-us.html">Find Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<div class="verseoftheday-div">
+    <div class="verseoftheday">Verse of the Day - PLACEHOLDER</div>
+</div>
 
-    <div class="verseoftheday-div">
-        <div class="verseoftheday">Verse of the Day - PLACEHOLDER</div>
+<div class="quote-section">
+    <h3 class="title-2">Daily Quote:</h3>
+    <p id="daily-quote" class="quote">TBA</p>
+</div>
+
+<div>
+    <div class="main-body-div">
+        <h1 class="main-welcome">Welcome to the House of God</h1>
     </div>
-
-    <div >
-        <div class="main-body-div">
-            <h1 class="main-welcome">Welcome to the House of God</h1>
-        </div>
-        <div class="location-div">
-            <div class="location-group">
-                <h3>Find us at - PLACE HOLDER: LOCATION</h3>
-            </div>
+    <div class="location-div">
+        <div class="location-group">
+            <h3>Find us at - PLACE HOLDER: LOCATION</h3>
         </div>
     </div>
+</div>
 
-    <footer>
-        <div class="main-footer">
-            <div class="footer-content">
-                <h1 class="footer-title">GOD'S HOUSE</h1>
-                <ul class="footer-ul">
-                    <li class="li-2"> <a href="donations.html">Donations</a></li>
-                    <li class="li-2"> <a href="find-us.html">Location</a></li>
-                    <li class="li-2">Socials</li>
-                </ul>
-                <p class="footer-copyright">&copy;2025 Javascript - Final Project</p>
-            </div>
+<footer>
+    <div class="main-footer">
+        <div class="footer-content">
+            <h1 class="footer-title">GOD'S HOUSE</h1>
+            <ul class="footer-ul">
+                <li class="li-2"> <a href="donations.html">Donations</a></li>
+                <li class="li-2"> <a href="find-us.html">Location</a></li>
+                <li class="li-2">Socials</li>
+            </ul>
+            <p class="footer-copyright">&copy;2025 Javascript - Final Project</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<script>
+    async function getDailyQuote() {
+        try {
+            const response = await fetch('https://zenquotes.io/api/random');
+            const data = await response.json();
+            document.getElementById('daily-quote').innerText = data[0].q + ' - ' + data[0].a;
+        } catch (error) {
+            console.error('Error fetching the quote:', error);
+            document.getElementById('daily-quote').innerText = "TBA";
+        }
+    }
+    window.onload = getDailyQuote;
+</script>
 
 </body>
 </html>
