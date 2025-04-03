@@ -30,11 +30,6 @@
     <div class="verseoftheday">Verse of the Day - PLACEHOLDER</div>
 </div>
 
-<div class="quote-section">
-    <h3 class="title-2">Daily Quote:</h3>
-    <p id="daily-quote" class="quote">TBA</p>
-</div>
-
 <div>
     <div class="main-body-div">
         <h1 class="main-welcome">Welcome to the House of God</h1>
@@ -59,20 +54,5 @@
         </div>
     </div>
 </footer>
-
-<script>
-    async function getDailyQuote() {
-        try {
-            const response = await fetch('https://zenquotes.io/api/random');
-            const data = await response.json();
-            document.getElementById('daily-quote').innerText = data[0].q + ' - ' + data[0].a;
-        } catch (error) {
-            console.error('Error fetching the quote:', error);
-            document.getElementById('daily-quote').innerText = "TBA";
-        }
-    }
-    window.onload = getDailyQuote;
-</script>
-
 </body>
 </html>
