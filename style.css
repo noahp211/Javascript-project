@@ -5,68 +5,63 @@
 
 @font-face {
     font-family: "Calli font";
-    src: url(Callifornia\ Signature.ttf);
+    src: url("Callifornia Signature.ttf");
 }
+
 :root {
     --clr-dark: #020617;
-    --clr-light:#f1f5f9;
-    --clr-slate:#94a3b8;
-    --clr-primary:#e11d48;
+    --clr-light: #f1f5f9;
+    --clr-slate: #94a3b8;
+    --clr-primary: #e11d48;
     --clr-website_palette1: #d68a06;
     --clr-website_palette2: #3f0c00;
     --clr-hover_text: #170f01;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
+
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
-  
+
 * {
     margin: 0;
     padding: 0;
 }
-  
+
 body {
     background-color: var(--clr-light);
 }
 
-/* ---------------------------------------------------------- */
-
 .title {
-    font-family:"Amoria";
+    font-family: "Amoria";
     font-weight: 100;
     font-size: 6lvh;
     text-align: center;
 }
 
 .title-2 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header{
+header {
     text-align: center;
 }
-
-/* --------- MAIN TITLE ------------------ */
 
 .main-title {
     margin: 15px;
 }
 
-/* -------- MAIN NAV BAR STYLES --------- */
-
 .main-nav {
     color: white;
-    border-top:  solid #1f5673 2px;
-    border-bottom:  solid #1f5673 2px;
+    border-top: solid #1f5673 2px;
+    border-bottom: solid #1f5673 2px;
     padding: 20px;
     margin: 30px;
 }
 
-nav ul li a{
+nav ul li a {
     font-size: large;
     color: black;
     text-decoration: none;
@@ -80,17 +75,15 @@ nav ul li a:hover {
     text-decoration: overline;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     margin-right: 25px;
 }
-
-/* ------- MAIN BODY -------- */
 
 .verseoftheday-div {
     margin-left: 30px;
@@ -107,25 +100,40 @@ nav ul li{
 
 .main-welcome {
     font-size: 18lvh;
-    font-family: "calli font";
+    font-family: "Calli font";
     padding: 10px;
     margin-top: 10px;
     font-weight: 100;
 }
-.location-group {
 
+.location-group {
 }
 
-h2{
-    font-family: "calli font";
+h2 {
+    font-family: "Calli font";
     font-size: 60px;
     margin-left: 25px;
 }
 
-/* ------- FOOTER ----------- */
+.quote-section {
+    margin-left: 30px;
+}
+
+.quote {
+    font-family: "Calli font";
+    font-size: 60px;
+    margin-left: 25px;
+    font-style: italic;
+}
+
+h3.title-2 {
+    font-family: "Calli font";
+    font-size: 60px;
+    margin-left: 25px;
+}
 
 footer {
-    background-image: radial-gradient( #6ea4bf, #cbeef3);
+    background-image: radial-gradient(#6ea4bf, #cbeef3);
     color: white;
     text-align: center;
     padding: 10px;
@@ -141,7 +149,7 @@ footer {
     padding: 5px;
 }
 
-.footer-ul, .li-2{
+.footer-ul, .li-2 {
     display: inline;
     padding: 20px;
     font-size: 20px;
@@ -158,11 +166,12 @@ footer {
 .footer-copyright {
     margin-top: 20px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+a:hover {
     color: gray;
 }
