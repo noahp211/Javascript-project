@@ -124,14 +124,9 @@ h2 {
     margin-left: 25px;
 }
 
-.quote-section {
-    margin-left: 30px;
-}
-
 .quote {
-    font-family: "Calli font";
-    font-size: 60px;
     margin-left: 25px;
+    padding-right: 70%;
     font-style: italic;
 }
 
