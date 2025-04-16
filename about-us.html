@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <script defer src="about-us.js"></script>
     <title>About us</title>
 </head>
 <body>
@@ -26,6 +27,27 @@
 </header>
 
 <h2>About us</h2>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    
+    <form id="contact-form">
+    <label for="name">Name: </label>
+    <span class="error" id="nameError"></span>
+    <br> <input type="text" id="name" name="name" placeholder="Enter your name">
+    <br>
+    <label>Email: </label> 
+    <span class="error" id="emailError"></span>
+    <br> <input type="text" id="email" name="email" placeholder="Enter your email">
+    <br>
+    <label>Message: </label>
+    <span class="error" id="messageError"></span>
+    <br><textarea id="message" name="message"></textarea>
+    <br>
+    <button class="submit-btn" type="submit" id="submitbtn">Send</button>
+</form>
+</section>
 
 <footer>
     <div class="main-footer">
