@@ -102,8 +102,12 @@ nav ul li {
 }
 
 .main-body-div {
+    color: white;
     display: flex;
     justify-content: center;
+    background-image: url("homepage-img.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .main-welcome {
@@ -125,8 +129,8 @@ h2 {
 }
 
 .quote {
-    margin-left: 25px;
-    padding-right: 70%;
+    margin-left: 10px;
+    padding-right: 81%;
     font-style: italic;
 }
 
