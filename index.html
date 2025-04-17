@@ -20,14 +20,14 @@
                 <li class="about-nav"><a href="about-us.html">About Us</a></li>
                 <li class="donations-nav"><a href="donations.html">Donations</a></li>
                 <li class="findus-nav"><a href="find-us.html">Find Us</a></li>
-                <li class="quotes-nav"><a href="quotes.html">Quotes</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <div class="verseoftheday-div">
-    <div class="verseoftheday">Verse of the Day - PLACEHOLDER</div>
+    <div class="verseoftheday">Verse of the Day:</div>
+    <p id="daily-quote" class="quote">Loading...</p>
 </div>
 
 <div>
@@ -36,7 +36,7 @@
     </div>
     <div class="location-div">
         <div class="location-group">
-            <h3>Find us at - PLACE HOLDER: LOCATION</h3>
+            <h3>Find us at - PLACE HOLDER: </h3>
         </div>
     </div>
 </div>
@@ -54,5 +54,22 @@
         </div>
     </div>
 </footer>
+
+<script>
+    async function getDailyBibleQuote() {
+        try {
+            const response = await fetch('https://beta.ourmanna.com/api/v1/get/?format=json');
+            const data = await response.json();
+            const verse = data.verse.details.text;
+            const reference = data.verse.details.reference;
+            document.getElementById('daily-quote').innerText = verse + '\n ' + reference;
+        } catch (error) {
+            console.error('Bible verse almost here:', error);
+            document.getElementById('daily-quote').innerText = "Inspiring Bible verse coming soon!";
+        }
+    }
+    window.onload = getDailyBibleQuote;
+</script>
+
 </body>
 </html>
