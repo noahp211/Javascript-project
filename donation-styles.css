@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Amoria";
+    src: url(AMORIA.otf);
+}
+
+@font-face {
+    font-family: "Calli font";
+    src: url("Callifornia Signature.ttf");
+}
+
+:root {
+    --clr-dark: #020617;
+    --clr-light: #f1f5f9;
+    --clr-slate: #94a3b8;
+    --clr-primary: #e11d48;
+    --clr-website_palette1: #d68a06;
+    --clr-website_palette2: #3f0c00;
+    --clr-hover_text: #170f01;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clr-light);
+}
+
+.title {
+    font-family: "Amoria";
+    font-weight: 100;
+    font-size: 6lvh;
+    text-align: center;
+}
+
+.title-2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    text-align: center;
+}
+
+.main-title {
+    margin: 15px;
+}
+
+.main-nav {
+    color: white;
+    border-top: solid #1f5673 2px;
+    border-bottom: solid #1f5673 2px;
+    padding: 20px;
+    margin: 30px;
+}
+
+nav ul li a {
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    font-size: larger;
+    color: gray;
+    text-decoration: overline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.verseoftheday-div {
+    margin-left: 30px;
+}
+
+.verseoftheday {
+    font-style: italic;
+}
+
+.main-body-div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-welcome {
+    font-size: 18lvh;
+    font-family: "Calli font";
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+.location-group {
+}
+
+h2 {
+    font-family: "Calli font";
+    font-size: 60px;
+    margin-left: 25px;
+}
+
+.quote-section {
+    margin-left: 30px;
+}
+
+.quote {
+    font-family: "Calli font";
+    font-size: 60px;
+    margin-left: 25px;
+    font-style: italic;
+}
+
+h3.title-2 {
+    font-family: "Calli font";
+    font-size: 60px;
+    margin-left: 25px;
+}
+
+footer {
+    background-image: radial-gradient(#6ea4bf, #cbeef3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: inline;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer-ul, .li-2 {
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.li-2 {
+    cursor: pointer;
+}
+
+.li-2:hover {
+    color: gray;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}
+
+/* -------- DONATIONS STYLE ---------- */
+
+.currentDonationNav {
+    font-weight: 900;
+}
+
+.why-donate-div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.why-donate-title-div {
+    display: flex;
+    justify-content: center;
+}
+
+.donations-titl {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.why-donate-paragraph {
+    font-size: 25px;
+    max-width: 50%;
+}
+
+.acts-verse {
+    font-weight: 900;
+}
+
+.donations-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    border: black solid 2px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.donation-button {
+    padding: 10px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: crosshair;
+}
+
+.donation-button:hover {
+    background-color: #1f2120;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.money-reason-selector {
+    padding: 10px;
+    font-size: 15px;
+    color: gray;
+    background-color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+}
