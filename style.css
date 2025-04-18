@@ -128,6 +128,11 @@ h2 {
     margin-left: 25px;
 }
 
+#about-us-text {
+    margin-left: 25px;
+    font-size: larger;
+}
+
 .quote {
     margin-left: 10px;
     padding-right: 81%;
